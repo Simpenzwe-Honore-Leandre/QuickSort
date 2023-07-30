@@ -1,0 +1,57 @@
+#container{
+   height: 30vmax;
+   padding: 1vmin ;
+   display: flex;
+   border-radius: 1vmin;
+   align-items: flex-start;
+   flex-wrap: wrap;
+   background-color: white;
+   overflow: scroll;
+ }
+body{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: hsla(24, 93%, 42%, 0.1);
+   flex-wrap: wrap;
+}
+
+strong{
+   text-transform: uppercase;
+}
+
+.notes{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+ .appbuttons{
+  border-radius: 1vmin;
+  font-size: 2vmax;
+  flex-wrap: nowrap;
+  border: inherit;
+  outline:dashed  rgb(0, 0, 0);
+  text-align: center;
+  padding: 0.5vmin;
+  margin: 1vmin;
+  width: 15vmax;
+  background-color: rgb(184, 223, 248);  
+  }
+
+
+ .bar
+ {
+   flex-wrap: wrap;
+   display: flex;
+    outline: 0.1vw dashed  rgb(0, 0, 0.1,1);
+    margin: 0.1vw;
+    font-size: 1vw;
+    justify-content: center;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    background-color: green;
+    position: relative;
+ }
+ 

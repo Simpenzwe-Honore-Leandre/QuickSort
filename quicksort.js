@@ -1,4 +1,6 @@
 swaps=[];
+const num = 20;
+const array = [];
 function partitionTheArray(array, start,end)
 {
     pivot = array[start]
@@ -42,13 +44,12 @@ function quicksort(array, start, end)
     // allswaps = [...j.swaps];
     return j.swaps;
 }   
-const num = 45;
-const array = [];
+
 function new_array()
 {
     for(let i = 0;i < num;i++)
     {
-        array[i]= Math.random().toPrecision(3);
+        array[i]= Math.random().toPrecision(1);
     }
     displayBars();
 }
@@ -64,7 +65,7 @@ function animateSwaps(swaps)
     displayBars([leftpointer, rightpointer]);
     setTimeout(function(){
         animateSwaps(swaps);
-    }, 100);
+    }, 500);
 }
 
 function play()
@@ -79,15 +80,15 @@ function displayBars(indices)
     container.innerHTML="";
     for(let i = 0 ; i < num; i++)
     {
+        container.style.border="10px solid black"
         const bar = document.createElement("div");
-        bar.style.height = array[i]*100+"%";
-        // bar.style.animation = a
-        bar.style.width = "10px";
+        bar.style.height = array[i]*45+"%";
+        bar.textContent = array[i];
+        bar.style.width = "1vmax";
         bar.style.backgroundColor = "green";
-        bar.classList.add("bar")
-        
+        bar.classList.add("bar");
         if(indices && indices.includes(i)){
-            bar.style.backgroundColor="blue";
+            bar.style.backgroundColor="burlywood";
         }
         container.appendChild(bar);
     }
