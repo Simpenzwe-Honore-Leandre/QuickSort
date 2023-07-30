@@ -1,2 +1,3 @@
 # Quick-Sort
-Visualizing the quick-sort algorithm by tracking swaps.
+Visualizing the quick-sort algorithm with HTML,CSS and JAVASCRIPT
+
